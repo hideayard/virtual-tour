@@ -446,20 +446,22 @@ public class OVRPlayerController : MonoBehaviour
 				if (OVRInput.Get(OVRInput.Button.SecondaryThumbstickLeft) ||
 					(RotationEitherThumbstick && OVRInput.Get(OVRInput.Button.PrimaryThumbstickLeft)))
 				{
-					if (ReadyToSnapTurn)
-					{
-						euler.y -= RotationRatchet;
-						ReadyToSnapTurn = false;
-					}
+					euler.y -= RotationRatchet;
+					// if (ReadyToSnapTurn)
+					// {
+					// 	euler.y -= RotationRatchet;
+					// 	ReadyToSnapTurn = false;
+					// }
 				}
 				else if (OVRInput.Get(OVRInput.Button.SecondaryThumbstickRight) ||
 					(RotationEitherThumbstick && OVRInput.Get(OVRInput.Button.PrimaryThumbstickRight)))
 				{
-					if (ReadyToSnapTurn)
-					{
-						euler.y += RotationRatchet;
-						ReadyToSnapTurn = false;
-					}
+					euler.y += RotationRatchet;
+					// if (ReadyToSnapTurn)
+					// {
+					// 	euler.y += RotationRatchet;
+					// 	ReadyToSnapTurn = false;
+					// }
 				}
 				else
 				{

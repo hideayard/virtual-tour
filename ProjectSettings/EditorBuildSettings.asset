@@ -5,24 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/DistanceGrab.unity
-    guid: 24f58b3f0ca02d44eaec7f50bca538f2
-  - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/CustomControllers.unity
-    guid: e0f49aa4174f98941b88699b5fecddc0
-  - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/Locomotion.unity
-    guid: 024cd9dcd49bd8f46a6bea03aa8a21bb
-  - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/WidevineVideo.unity
-    guid: 5495456b7253d31479996b9587c20927
-  - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/AppDeeplink.unity
-    guid: 86c41af799197d64889f7269608d44e6
   - enabled: 1
     path: Assets/VirTour.unity
     guid: 58d4b7273cbd6e34fb1049e350a5d421

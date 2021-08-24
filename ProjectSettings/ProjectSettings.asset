@@ -125,9 +125,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: -4863636190937886691, guid: b441214661d77894a83e0717b1f0b6e8, type: 2}
-  - {fileID: 11400000, guid: d606974a2e31a034583ffbaf31e1f85c, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -837,6 +835,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -850,10 +849,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 9976383a-9872-47ad-ac79-1c0c1d07f3a0
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: oculus2
+  organizationId: gundulpacul1
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

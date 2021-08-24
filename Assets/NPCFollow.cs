@@ -11,9 +11,10 @@ public class NPCFollow : MonoBehaviour
     [Space(15)]
     public GameObject ThePlayer;
     public float TargetDistance;
-    public float AllowedDistance = 1.5f;
+    public float AllowedDistance = 1.2f;
     public float FollowSpeed;
     public RaycastHit Shot;
+    public bool startFollow = false;
 
     void Update()
     {
@@ -28,14 +29,14 @@ public class NPCFollow : MonoBehaviour
             //lihat sekali lagi
             if(ThePlayer.transform.position.y > transform.TransformDirection(Vector3.forward).y)
             {
-                transform.LookAt(new Vector3(ThePlayer.transform.position.x, ThePlayer.transform.position.y -1f, ThePlayer.transform.position.z) );
+                transform.LookAt(new Vector3(ThePlayer.transform.position.x, ThePlayer.transform.position.y -0.25f, ThePlayer.transform.position.z) );
             }
             else
             {
                 transform.LookAt(new Vector3(ThePlayer.transform.position.x, ThePlayer.transform.position.y, ThePlayer.transform.position.z) );
             }
 
-            if(TargetDistance >= AllowedDistance)
+            if(TargetDistance >= AllowedDistance && startFollow)
             {
                 FollowSpeed = 1;//0.1f;
 
@@ -46,7 +47,7 @@ public class NPCFollow : MonoBehaviour
 
                 if(ThePlayer.transform.position.y > transform.TransformDirection(Vector3.forward).y)
                 {
-                    transform.position = Vector3.MoveTowards(new Vector3(transform.position.x, ThePlayer.transform.position.y -1f, transform.position.z), new Vector3(ThePlayer.transform.position.x, ThePlayer.transform.position.y, ThePlayer.transform.position.z), FollowSpeed * Time.deltaTime );
+                    transform.position = Vector3.MoveTowards(new Vector3(transform.position.x, ThePlayer.transform.position.y -0.25f, transform.position.z), new Vector3(ThePlayer.transform.position.x, ThePlayer.transform.position.y, ThePlayer.transform.position.z), FollowSpeed * Time.deltaTime );
                 }
                 else
                 {
