@@ -31,14 +31,18 @@ public class scriptTV : MonoBehaviour
 
         if(tvOn)
         {
-            vp.Play();
-        }
-        else
-        {
             if (vp.isPlaying)
             {
                 vp.Pause();
             }
+            else
+            {
+                vp.Play();
+            }
+        }
+        else
+        {
+            tvOn = false;
         }
 
     }
