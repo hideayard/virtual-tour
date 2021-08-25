@@ -8,6 +8,7 @@ public class scriptTV : MonoBehaviour
 
     public UnityEngine.Video.VideoClip videoClip;
     public bool tvOn = false;
+    public bool OnArea = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,22 +30,20 @@ public class scriptTV : MonoBehaviour
     {
         var vp = GetComponent<UnityEngine.Video.VideoPlayer>();
 
-        if(tvOn)
+        if(OnArea)
         {
-            if (vp.isPlaying)
-            {
-                vp.Pause();
-            }
-            else
+            if(tvOn)
             {
                 vp.Play();
             }
         }
-        else
-        {
-            tvOn = false;
-        }
-
+        // else
+        // {
+        //     vp.Pause();
+        // }
+        
+        tvOn = false;
+        OnArea = false;
     }
 
 }
